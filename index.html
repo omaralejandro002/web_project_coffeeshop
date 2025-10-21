@@ -11,7 +11,6 @@
   <title>Cafetería</title>
 
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
-
   <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
 
@@ -23,198 +22,15 @@
   <div class="page">
     
     <header class="header">
-      <div class="header__top-section">
-        <img 
-          src="./images/logo_coffeeshop_dark.svg" 
-          alt="Logotipo Triple Espresso" 
-          class="header__logo"
-        >
-        <nav class="header__links">
-          <a href="#recipes" class="header__link">Recetas</a>
-          <a href="#reservation" class="header__link">Reservar una mesa</a>
-          <a href="#contacts" class="header__link">Contactos</a>
-        </nav>
-      </div>
-      
-      <div class="header__main-section">
-        <div class="header__text-container"> 
-          <h1 class="header__title"> Café de especialidad</h1><h2>en Triple Peaks</h2>
-          <p class="header__description">
-            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
-            para darte energía y motivar tu creatividad.
-          </p>
-          </div>
-        
-        <img 
-          src="./images/inside_coffee_shop.png" 
-          alt="Ilustración de un interior de cafetería" 
-          class="header__image"
-        >
-      </div>
-    </header>
+      </header>
 
     <main class="content">
-      
-      <section class="recipes" id="recipes">
-        <h2 class="recipes__title">Recetas</h2>
-        <p class="recipes__subtitle">
-          Echa un vistazo a las recetas que hemos reunido para que inicies tus propios rituales de café.
-        </p>
-        
-        <div class="recipes__cards">
-          
-          <div class="recipes__card">
-            <img 
-              src="./images/aeropress.jpg" 
-              alt="Preparación de café con Aeropress" 
-              class="recipes__image"
-            >
-            <div class="recipes__card-content">
-              <h3 class="recipes__card-title">Receta de Aeropress</h3>
-              <p class="recipes__card-subtitle">Una forma rápida y sencilla de hacer una sola taza de café.</p>
-              <div class="recipes__card-list">
-                <div class="recipes__list-item">
-                  <img src="./images/check.svg" alt="Icono de check" class="recipes__icon">
-                  <span>Grano de café: 20 g</span>
-                </div>
-                <div class="recipes__list-item">
-                  <img src="./images/check.svg" alt="Icono de check" class="recipes__icon">
-                  <span>Agua: 180 ml</span>
-                </div>
-                <div class="recipes__list-item">
-                  <img src="./images/check.svg" alt="Icono de check" class="recipes__icon">
-                  <span>Temperatura del agua: 200°F / 93°C 🌡️</span>
-                </div>
-                <div class="recipes__list-item">
-                  <img src="./images/check.svg" alt="Icono de check" class="recipes__icon">
-                  <span>Tiempo de preparación: 4 min</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="recipes__card">
-            <img 
-              src="./images/french-press.jpg" 
-              alt="Preparación de café en cafetera francesa" 
-              class="recipes__image"
-            >
-            <div class="recipes__card-content">
-              <h3 class="recipes__card-title">Receta en cafetera francesa</h3>
-              <p class="recipes__card-subtitle">El café más fácil de hacer en casa.</p>
-              <div class="recipes__card-list">
-                <div class="recipes__list-item">
-                  <img src="./images/check.svg" alt="Icono de check" class="recipes__icon">
-                  <span>Grano de café: 30 g</span>
-                </div>
-                <div class="recipes__list-item">
-                  <img src="./images/check.svg" alt="Icono de check" class="recipes__icon">
-                  <span>Agua: 450 ml</span>
-                </div>
-                <div class="recipes__list-item">
-                  <img src="./images/check.svg" alt="Icono de check" class="recipes__icon">
-                  <span>Temperatura del agua: 200°F / 93°C 🌡️</span>
-                </div>
-                <div class="recipes__list-item">
-                  <img src="./images/check.svg" alt="Icono de check" class="recipes__icon">
-                  <span>Tiempo de preparación: 6 min</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div> </section>
-      
-      <section class="reservation" id="reservation">
-        <h2 class="reservation__title">Reservar una mesa</h2>
-        <form class="form">
-          <fieldset class="form__fieldset">
-            <label class="form__label">
-              <input type="text" placeholder="Nombre *" class="form__input" required>
-            </label>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <label class="form__label">
-              <input type="number" placeholder="Número de personas *" class="form__input" required min="1" max="100">
-            </label>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <label class="form__label">
-              <input type="email" placeholder="Correo electrónico *" class="form__input" required>
-            </label>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <label class="form__label">
-              <input type="datetime-local" placeholder="Fecha y hora *" class="form__input" required>
-            </label>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <label class="form__label">
-              <textarea placeholder="Tu comentario" class="form__input form__input_type_textarea"></textarea>
-            </label>
-          </fieldset>
-
-          <fieldset class="form__fieldset form__fieldset_type_submit">
-            <button type="submit" class="form__button">
-              Reservar una mesa
-            </button>
-            <label class="form__checkbox-label">
-              <input type="checkbox" class="form__checkbox" required>
-              <span class="form__pseudo-checkbox"></span>
-              Acepto los términos de uso
-            </label>
-          </fieldset>
-
-        </form>
-      </section>
-
+      <section class="recipes"></section>
+      <section class="reservation"></section>
     </main>
 
     <footer class="footer">
-  <div class="footer__content">
-    <div class="footer__column footer__column_content_copyright">
-      <img 
-        src="./images/logo_coffeeshop_light.svg" 
-        alt="Logotipo Triple Espresso" 
-        class="footer__logo"
-      >
-      <p class="footer__copyright">
-        &copy; 2023. Tu Nombre
-      </p>
-    </div>
-    
-    <div class="footer__column footer__column_content_social">
-      <h3 class="footer__column-heading">Redes sociales</h3>
-      <ul class="footer__list">
-        <li class="footer__list-item">
-          <a href="#" class="footer__social-link">
-            <img 
-              src="./images/facebook_white.svg" 
-              alt="Icono de Facebook" 
-              class="footer__social-icon"
-            >
-            Facebook
-          </a>
-        </li>
-        <li class="footer__list-item">
-          <a href="#" class="footer__social-link">
-            <img 
-              src="./images/instagram_white.svg" 
-              alt="Icono de Instagram" 
-              class="footer__social-icon"
-            >
-            Instagram
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <p class="footer__author">Desarrollado por Tu Nombre</p> 
-</footer>
+      </footer>
   </div>
 </body>
 </html>
